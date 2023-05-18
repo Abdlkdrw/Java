@@ -13,7 +13,6 @@ import java.util.Scanner;
 public class Domashka2 {
 
     public static void main(String[] args) {
-        System.out.println("Practical task №2. Variant 1. Student Abdulkadyrov N.N. Group RIBO-02-21");
         System.out.println("Practica2 task №1. Variant 1. Student Abdulkadyrov N.N. Group RIBO-02-21");
         Scanner scan = new Scanner(System.in);
         Car car = new Car();
