@@ -2,19 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.domashka2;
+package com.mycompany.domashka3;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Abdlkdrw
+ * @author Нурулла
  */
-public class Domashka2 {
+public class Domashka3 {
 
     public static void main(String[] args) {
-        System.out.println("Practical task №2. Variant 1. Student Abdulkadyrov N.N. Group RIBO-02-21");
-        System.out.println("Practica2 task №1. Variant 1. Student Abdulkadyrov N.N. Group RIBO-02-21");
+        System.out.println("Practica3 task №1. Variant 1. Student Abdulkadyrov N.N. Group RIBO-02-21");
         Scanner scan = new Scanner(System.in);
         Car car = new Car();
         System.out.print("Введите марку вашего автомобиля: ");
@@ -29,6 +28,10 @@ public class Domashka2 {
         System.out.print("Введите пробег вашего автомобиля: ");
         int mileage = scan.nextInt();
         car.setMileage(mileage);
-        car.getInfo();
+        System.out.println(car.toString());
+        
+        CarService cs = new CarService("Мосвка, Киевская улица");
+        cs.modify(car);
+        System.out.println(car.toString());
     }
 }
